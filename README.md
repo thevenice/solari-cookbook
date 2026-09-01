@@ -33,6 +33,12 @@ past. Copy one into your project and change the parts you care about.
 | --- | --- | --- |
 | [desktop-computer-use-py](examples/desktop-computer-use-py) | Python | Screenshot, click, and type on a Linux GUI |
 
+### Agent integration
+
+| Example | Language | What it shows |
+| --- | --- | --- |
+| [solari-mcp](examples/solari-mcp) | TypeScript | All three products as MCP tools, with leak-safe session management |
+
 ## Running an example
 
 Each directory is self-contained.

@@ -1,0 +1,29 @@
+{
+  "name": "solari-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Solari — cloud browsers, sandboxes and desktops as agent tools, with leak-safe session management.",
+  "keywords": ["mcp", "model-context-protocol", "solari", "browser", "sandbox", "desktop", "agent"],
+  "license": "MIT",
+  "type": "module",
+  "bin": { "solari-mcp": "./dist/index.js" },
+  "files": ["dist", "README.md"],
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "smoke": "npm run build && tsx scripts/smoke.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "@solarisdk/browser": "^0.1.2",
+    "@solarisdk/sdk": "^0.1.2",
+    "zod": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

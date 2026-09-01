@@ -1,0 +1,16 @@
+{
+  "subject": "Observability platforms — 100 engineers, AWS-heavy, SSO required",
+  "sources": [
+    { "id": "grafana-pricing",  "vendor": "Grafana Cloud", "url": "https://grafana.com/pricing/" },
+    { "id": "honeycomb-pricing","vendor": "Honeycomb",     "url": "https://www.honeycomb.io/pricing" },
+    { "id": "betterstack-pricing","vendor": "Better Stack","url": "https://betterstack.com/pricing" }
+  ],
+  "claims": [
+    { "id": "grafana-sso",    "vendor": "Grafana Cloud", "sourceId": "grafana-pricing",   "text": "Offers SAML single sign-on",        "match": ["SAML", "single sign-on", "SSO"] },
+    { "id": "grafana-free",   "vendor": "Grafana Cloud", "sourceId": "grafana-pricing",   "text": "Has a free tier",                   "match": ["Free"] },
+    { "id": "honeycomb-sso",  "vendor": "Honeycomb",     "sourceId": "honeycomb-pricing", "text": "Offers SAML single sign-on",        "match": ["SAML", "SSO"] },
+    { "id": "honeycomb-trace","vendor": "Honeycomb",     "sourceId": "honeycomb-pricing", "text": "Supports distributed tracing",      "match": ["trace", "tracing"] },
+    { "id": "better-sso",     "vendor": "Better Stack",  "sourceId": "betterstack-pricing","text": "Offers SAML single sign-on",       "match": ["SAML", "SSO"] },
+    { "id": "better-logs",    "vendor": "Better Stack",  "sourceId": "betterstack-pricing","text": "Sells log management by volume",   "match": ["log", "GB"], "requireAll": true }
+  ]
+}
